@@ -1,7 +1,0 @@
-/* Phase 2 responsive safeguards */
-html,body{max-width:100%;overflow-x:clip}
-.menu-toolbar>*,.menu-item>div,.special-info,.story-copy,.reservation-intro,.reservation-form{min-width:0}
-.menu-item-top h2{min-width:0;overflow-wrap:anywhere}
-.filter-tabs,.diet-filters{min-width:0;max-width:100%;scrollbar-width:thin}
-.hero-copy,.page-hero p,.menu-item p,.story-copy p,.modal-card p{overflow-wrap:anywhere}
-@media(max-width:639px){.split{align-items:flex-start;flex-direction:column;gap:1rem}.hero-actions,.cta-actions{width:100%}.hero-actions .btn,.cta-actions .btn{max-width:100%}.hero-note{max-width:calc(100% - 2rem)}.menu-toolbar{min-width:0}.menu-list{min-width:0}.reservation-form{overflow:hidden}}
