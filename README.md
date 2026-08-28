@@ -6,17 +6,20 @@ A modern, mobile-first restaurant/cafe marketplace template built with semantic 
 - Immersive homepage hero and opening hours
 - Daily specials and customer review slider
 - Interactive menu category and dietary filters
+- Accessible filter state announcements with `aria-pressed`
 - Menu pricing, descriptions and dietary badges
 - Reservation date/time controls and guest counter
 - Client-side form validation and confirmation modal
-- Mobile hamburger navigation
+- Keyboard-friendly mobile navigation and modal focus management
+- Accessible review controls and live slide counter
 - Sticky scrolling header
+- Page-specific canonical, Open Graph and Twitter metadata
 - CSS custom properties for colors, fonts, radii and spacing
 - No external CSS/JS frameworks
 
 ## Structure
 ```text
-savoria-restaurant-template/
+savoria-restaurant-cafe-template/
 ├── index.html
 ├── menu.html
 ├── reservation.html
@@ -55,7 +58,10 @@ Example:
 ```
 
 ## JavaScript
-`initMobileNavigation()` handles the hamburger menu. `initStickyHeader()` changes the header after scrolling. `initMenuFilters()` filters menu items without a reload. `initReviewSlider()` powers the homepage review carousel. `initReservationForm()` handles date constraints, guest controls, validation and the confirmation modal.
+`initMobileNavigation()` handles the hamburger menu and keyboard focus. `initStickyHeader()` changes the header after scrolling. `initMenuFilters()` filters menu items without a reload and exposes active filter state. `initReviewSlider()` powers the homepage review carousel. `initReservationForm()` handles date constraints, guest controls, validation and the confirmation modal with keyboard focus management.
+
+## Accessibility
+The mobile navigation and reservation confirmation modal support Escape-to-close and keyboard focus management. Menu filters expose their selected state through `aria-pressed`, and review controls include accessible labels with a live slide counter.
 
 ## Images
 The demo uses Unsplash image URLs as placeholders. For a commercial marketplace release, replace them with images you are licensed to distribute, preferably optimized WebP/AVIF assets in the `images/` directory.
